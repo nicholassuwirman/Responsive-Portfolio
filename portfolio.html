@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="Pictures/name-logo-cropped.png">
   <title>Responsive Portfolio</title>
 
   
@@ -32,14 +33,34 @@
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/hero.css">
-
+  <link rel="stylesheet" href="css/sidebar-left.css">
+  <link rel="stylesheet" href="css/sidebar-right.css">
   <style>
-    @font-face {
-        font-family: 'SF Mono';
-      } 
+   
   </style>
 </head>
 <body>
+
+  <section class="sidebar-left">
+    <a href="https://github.com/nicholassuwirman" target="_blank"><img class="sidebar-logo" src="Logos/github-logo.png"></a>
+    <a href="https://instagram.com/n.wilsonnn" target="_blank">      <img class="sidebar-logo" src="Logos/instagram-logo.png"></a>
+    <a href="https://www.linkedin.com/in/nicholas-wilson-suwirman-7593bb269/" target="_blank"><img class="sidebar-logo" src="Logos/linkedin-logo.png"></a>
+    <p class="sidebar-dot">.</p>
+    <p class="sidebar-dot">.</p>
+    <p class="sidebar-dot">.</p>
+    <p class="sidebar-dot">.</p>
+    <p class="sidebar-dot">.</p>
+  </section>
+
+  <section class="sidebar-right">
+    <a class="vertical-text-a" href="https://mail.google.com" target="_blank"><p class="vertical-text">wilsonsuwirmans@gmail.com</p></a>
+    <p class="sidebar-dot">.</p>
+    <p class="sidebar-dot">.</p>
+    <p class="sidebar-dot">.</p>
+    <p class="sidebar-dot">.</p>
+    <p class="sidebar-dot">.</p>
+  </section>
+
   <section class="navbar">
     <img class="logo-img" src="Pictures/name-logo-cropped.png">
      <ul class="nav-text-container">
@@ -49,6 +70,7 @@
         <button class="navbar-button"><p class="navbar-button-text">Resume</p></button>
       </ul>
   </section>
+
   <section class="first-page">
     <header class="hero">
       <p class="greeting">Hi! my name is</p>
@@ -58,13 +80,10 @@
         <p class="description-2">I'm a Computer Science student in Hochschule Darmstadt who's very interested in learning
           new things.
       </div>
-      <button class="hero-button"><p class="hero-button-text">Check out my github!</p></button>
+      <button class="hero-button"><a  href="https://github.com/nicholassuwirman" target="_blank"><p class="hero-button-text">Check out my github!</p></a></button>
     </header>
   </section>
 
-  <!--
-
-  
   <section class="about-me-section">
     <div class="col1-abtme">
       <div class="abtme-header-container">
@@ -86,7 +105,6 @@
     <div class="col2-abtme">
       <img class="photo-wilson" src="Pictures/photo-wilson.jpg">
     </div>
-  -->
-
+  
 </body>
 </html>

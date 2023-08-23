@@ -27,7 +27,7 @@
 .nav-text {
   color:white;
   font-family: 'Open Sans';
-  font-size: 0.57rem; /*0.57 rem*/
+  font-size:  0.57rem; /*0.57 rem*/
   font-weight: 700;
   text-decoration: 0;
   padding-right: 1em;
@@ -40,8 +40,9 @@
 
 
 .navbar-button {
-  height: 2.5em;
-  width: 5em;
+  height: 7vw;
+  width: 15vw;
+  margin-right: 3em;
   background-color: transparent;
 
   display: flex;
@@ -79,8 +80,53 @@
 }
 
 .navbar-button-text {
-  font-size: 0.6rem;
+  font-size: 0.57rem;
   color: white;
   font-family: 'Open Sans';
   font-weight: 700;
+}
+@media (min-width: 768px) {/*small tablet */
+  .logo-img {
+    width: 50px;
+  }
+
+  .nav-text {
+    font-size:  0.9rem;
+  }
+
+  .navbar-button-text {
+    font-size: 0.9rem;
+  }
+
+  .navbar-button {
+    height: 45px;
+    width: 100px;
+  }
+}
+
+@media (min-width: 769px) {/*big tablet */
+  .logo-img {
+    width: 50px;
+  }
+
+  .nav-text {
+    font-size:  1rem;
+  }
+
+  .navbar-button-text {
+    font-size: 1rem;
+  }
+
+  .navbar-button {
+    height: 50px;
+    width: 100px;
+  }
+
+  .logo-img {
+    margin-left: 3em;
+  }
+
+  .nav-text-container {
+    margin-right: 3em;
+  }
 }

@@ -1,0 +1,32 @@
+.sidebar-left {
+  width: 40px;
+  position: fixed;
+  bottom: 7px;
+  left: 45px;
+  display: none;
+}
+
+.sidebar-logo {
+  height: 22px;
+  margin-bottom: 25px;
+  transition: transform 0.25s;
+}
+
+.sidebar-logo:hover {
+  transform: translateY(-4px);
+}
+
+.sidebar-dot {
+  color: rgb(131, 128, 128);
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  margin-left: 8px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 769px) {
+  .sidebar-left {
+    display: block;
+  }
+}

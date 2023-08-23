@@ -1,0 +1,42 @@
+.sidebar-right {
+  width: 40px;
+  position: fixed;
+  bottom: 7px;
+  right: 27px;
+  display: none;
+}
+
+.vertical-text-a {
+  text-decoration: none;
+
+}
+
+.vertical-text {
+  writing-mode: vertical-lr;
+  color: rgb(131, 128, 128);
+  font-family: 'SF Mono';
+  font-size: 0.938rem;
+  margin-left: 4px;
+  transition: transform 0.2s;
+}
+
+.vertical-text:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+
+.sidebar-dot {
+  color: rgb(131, 128, 128);
+  font-family: 'Open Sans';
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+}
+
+@media (min-width: 769px) {
+  .sidebar-right {
+    display: block;
+  }
+}
