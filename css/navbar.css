@@ -1,6 +1,9 @@
 
-.hero-section {
-  height: 100vh;
+.first-page {
+  height: 100vh; /* might cause problem */
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  margin-top: 0.8em;
 }
 
 .navbar-number {
@@ -16,14 +19,13 @@
 }
 
 .logo-img {
-  width: 20%;
+  width: 10%;
 }
 
 .nav-text-container {
   display: flex;
   list-style-type: none; /* Remove bullet points */
   align-items: center;
-  padding-right: 0.7em;
 }  
 
 .nav-text {

@@ -1,0 +1,86 @@
+.hero {
+  width: 100%;
+  margin-top: 12em;
+}
+
+.greeting {
+  font-family: 'SF Mono';
+  color: white;
+  margin-bottom: 0.5em;
+  font-size: 1rem;
+}
+
+.name {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #d2e2fd;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.description-1 {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #afbcd2 ;
+  margin-top: 0;
+  margin-bottom: 1.2em;
+}
+
+.description-2-container {
+  width: 85%;
+}
+
+.description-2 {
+  font-family: 'Open Sans';
+  font-weight: 500;
+  font-size: 0.9rem;
+
+  color: #7a8394;
+
+  margin-bottom: 4em;
+}
+
+.hero-button {
+  height: 4em;
+  width: 15em;
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-color: #d2e2fd;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 1px;
+
+  position: relative;
+
+  transition:  0.2s;
+}
+
+.hero-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.15em #d2e2fd;
+  opacity: 0;
+  transition: opacity 100ms linear;
+}
+
+.hero-button:hover::after {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.hero-button-text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #d2e2fd;
+  font-family: 'Source Sans 3';
+}
