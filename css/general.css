@@ -3,7 +3,6 @@ body, html {
   margin: 0;
   background-color: #2b2d42;
   overflow-x: hidden; /* Prevent horizontal scrolling */
-  text-decoration: none;
 
 }
 

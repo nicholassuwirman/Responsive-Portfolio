@@ -176,7 +176,7 @@
   }
 }
 
-@media (min-width: 900px) and (min-height: 670px) { /* dekstop */
+@media (min-width: 1000px) and (min-height: 600px) { /* dekstop */
   .first-page {
     padding: 0 11vw; /* Default padding for smaller screens */
   }
