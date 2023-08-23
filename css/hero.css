@@ -1,7 +1,9 @@
 .first-page {
-  height: 92vh; /* might cause problem */
+  height: 92vh;
   width: 100%;
-
+  max-width: 1200px; /* Adjust this value as needed for 14-inch screen content width */
+  margin: 0 auto; /* Center horizontally */
+  padding: 0 11vw; /* Default padding for smaller screens */
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center vertically */
@@ -12,8 +14,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-left: 3em;
   padding-bottom: 15vw;
+  
 }
 
 .greeting {
@@ -166,11 +168,12 @@
   }
 
   .hero {
-    width: 77%;
     margin-left: 0px;
   }
 
-  
+  .description-2-container {
+    width: 77%;
+  }
 }
 
 @media (min-width: 1000px) and (min-height: 670px) { /* dekstop */
@@ -179,22 +182,22 @@
   }
   
   .name {
-    font-size: 3.8rem;
+    font-size: 4.5rem;
   }
   
   .description-1 {
-    font-size: 3rem;
+    font-size: 3.7rem;
   }
 
   .description-2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     width: 60%;
   }
 
   .hero-button-text {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .hero {
-    padding-top: 9em;
+    padding-top: 9vw;
   }
 }
