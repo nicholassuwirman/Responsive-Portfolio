@@ -3,7 +3,7 @@
   width: 100%;
   max-width: 1200px; /* Adjust this value as needed for 14-inch screen content width */
   margin: 0 auto; /* Center horizontally */
-  padding: 0 11vw; /* Default padding for smaller screens */
+  padding: 0 7vw; /* Default padding for smaller screens */
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center vertically */
@@ -177,12 +177,16 @@
 }
 
 @media (min-width: 1000px) and (min-height: 670px) { /* dekstop */
+  .first-page {
+    padding: 0 11vw; /* Default padding for smaller screens */
+  }
+
   .greeting {
     font-size: 1.188rem;
   }
   
   .name {
-    font-size: 4.5rem;
+    font-size: 4.4rem;
   }
   
   .description-1 {
@@ -200,4 +204,5 @@
   .hero {
     padding-top: 9vw;
   }
+  
 }
