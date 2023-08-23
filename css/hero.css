@@ -1,6 +1,19 @@
+.first-page {
+  height: 92vh; /* might cause problem */
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+}
+
 .hero {
   width: 100%;
-  margin-top: 12em;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5em;
+
 }
 
 .greeting {

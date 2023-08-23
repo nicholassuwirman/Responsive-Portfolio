@@ -1,18 +1,14 @@
-
-.first-page {
-  height: 100vh; /* might cause problem */
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  margin-top: 0.8em;
-}
-
 .navbar-number {
   font-family: 'SF Mono';
   color: #ef233c;
 }
 
 .navbar {
+  height: 8vh;
   width: 100%;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  margin-top: 0.8em;
   display: flex;
   align-items: center;
   justify-content: space-between;
