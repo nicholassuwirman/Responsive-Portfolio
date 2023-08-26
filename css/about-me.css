@@ -1,8 +1,7 @@
 .about-me-page {
   max-width: 1200px; /* Adjust this value as needed for 14-inch screen content width */
   margin: 0 auto; /* Center horizontally */
-  padding-left: 6vw;
-  padding-right: 6vw;
+  padding: 0 6vw;
   margin-bottom: 7vw;
 }
 
@@ -85,7 +84,7 @@
 
 @media (min-width: 768px) {/*small tablet */
   .about-me-page {
-    padding-left: 50px; 
+    padding-left: 65px; 
     padding-right: 50px;
   }
 
@@ -148,7 +147,7 @@
   }
 
   .about-me-page {
-    padding-left: 14vw;
+    padding-left: 17vw;
   }
 
   .photo-wilson {

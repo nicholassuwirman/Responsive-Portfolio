@@ -20,8 +20,7 @@
 .project-container-mobile {
   position: relative;
   left: 0px;
-  overflow: hidden; /* Add this line to hide any overflow */
-
+  overflow: hidden;
 }
 
 .project-mobile {
@@ -31,7 +30,7 @@
   border-radius: 3px;
 }
 
-.project-overlay {
+.project-overlay-mobile {
   border: none;
   height: 99.1%;
   width: 100.2%;
@@ -86,13 +85,75 @@
 .project-github:hover {
   transform: translateY(-4px);
 }
-.project-dekstop {
+.project-tablet {
+  display: none;
+}
+.project-desktop {
+  display: none;
+}
+.project-overlay-tablet {
+  display: none;
+}
+.project-overlay-desktop {
   display: none;
 }
 
 @media (min-width: 768px) {
   .someofmy-text {
     font-size: 32px;
+  }
+
+  .project-mobile {
+    display: none;
+  }
+
+  .project-container-tablet {
+    position: relative;
+    left: 0px;
+    overflow: hidden;
+    width: 668px;
+    height: 418px;
+  }
+
+  .project-tablet {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    border-radius: 3px;
+  }
+
+  .project-overlay-tablet {
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(59, 61, 88, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  
+    display: flex;
+    flex-direction: column;
+  
+    border-radius: 3px;
+  }
+
+  .featured-project {
+    font-size: 18px;
+  }
+
+  .project-title {
+    font-size: 26px;
+  }
+
+  .project-description {
+    font-size: 20px;
+  }
+
+  .project-github {
+    width: 36px;
   }
 }
 
@@ -109,13 +170,59 @@
     font-size: 28px;
   }
   
+ 
+    
+  .project-container-desktop {
+    position: relative;
+
+    height: 30vw;
+    width: 45vw;
+    overflow: hidden; /* Add this line */
+
+  }
+
+  .project-desktop {
+    
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .project-overlay-desktop {
+    border: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(59, 61, 88, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  
+    display: flex;
+    flex-direction: column;
+  
+    border-radius: 3px;
+  }
+  
+
 
   .project-mobile {
     display: none;
   }
-
-  .project-dekstop {
-    display: block;
-    height: 30vw;
+  .project-tablet {
+    display: none;
   }
+  .project-overlay-mobile {
+    display: none;
+  }
+  .project-overlay-tablet {
+    display: none;
+  }
+  .project-container-mobile {
+    display: none;
+  }
+  .project-container-tablet {
+    display: none;
+  }
+  
 }
