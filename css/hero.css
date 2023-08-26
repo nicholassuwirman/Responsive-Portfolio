@@ -1,9 +1,11 @@
+
+
 .first-page {
   height: 92vh;
   width: 100%;
   max-width: 1200px; /* Adjust this value as needed for 14-inch screen content width */
   margin: 0 auto; /* Center horizontally */
-  padding: 0 7vw; /* Default padding for smaller screens */
+  padding: 0 6.1vw; /* Default padding for smaller screens */
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center vertically */
