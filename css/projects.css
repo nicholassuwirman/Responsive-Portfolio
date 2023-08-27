@@ -1,3 +1,9 @@
+.projects-container {
+  margin: 0 auto; /* Center horizontally */
+  padding: 0 6vw;
+  margin-bottom: 7vw;
+}
+
 .someofmy-number {
   font-size: 3.8vw;
   font-family: 'SF Mono';
@@ -97,6 +103,9 @@
 .project-overlay-desktop {
   display: none;
 }
+.project-texts-container {
+  display: none;
+}
 
 @media (min-width: 768px) {
   .someofmy-text {
@@ -157,7 +166,16 @@
   }
 }
 
+
 @media (min-width: 769px) {
+  .projects-container {
+    padding: 0 15vw;
+  }
+
+  .project-image-container {
+    position: relative;
+  }
+
   .someofmy-container {
     margin-bottom: 9vw;
   }
@@ -170,15 +188,14 @@
     font-size: 28px;
   }
   
- 
-    
   .project-container-desktop {
+    display: flex;
     position: relative;
 
-    height: 30vw;
-    width: 45vw;
+    height: 25vw;
+    width: 70vw;
     overflow: hidden; /* Add this line */
-
+    z-index: 0;
   }
 
   .project-desktop {
@@ -186,13 +203,14 @@
     display: block;
     width: 100%;
     height: 100%;
+    border-radius: 3px;
   }
 
-  .project-overlay-desktop {
+  .desktop-hover-overlay {
     border: none;
     height: 100%;
     width: 100%;
-    background-color: rgba(59, 61, 88, 0.97);
+    background-color: rgba(59, 61, 88, 0.9);
     position: absolute;
     top: 0;
     left: 0;
@@ -202,9 +220,72 @@
     flex-direction: column;
   
     border-radius: 3px;
+
+    opacity: 1; /* Start with full transparency */
+    transition: opacity 0.15s;
+  }
+
+  .project-image-container:hover .desktop-hover-overlay {
+    opacity: 0; /* Change opacity on hover */
   }
   
+  .project-overlay-desktop {
+    background: #7e8ba1;
+    width: 60%;
+    height: 40%;
+    position: absolute;
+    top: 7vw;
+    left: 24vw;
+    z-index: 3;
+    padding-top: 1.8vw;
+    padding-bottom: 1.8vw;
+    padding-left: 0.3vw;
+    padding-right: 2.5vw;
+    text-align: right;
 
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    border-radius: 5px;
+  }
+
+  .project-description {
+    margin: 0;
+    padding: 0;
+    font-size: 1.7vw;
+    width: 95%;
+  }
+
+  .project-texts-container {
+    width: 30vw;
+    height: 20vw;
+    display: block;
+    justify-content: right;
+    text-align: right;
+    padding-right: 1.5vw;
+  }
+
+  .featured-project {
+    font-size: 1.7vw;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .project-title {
+    font-size: 3vw;
+    padding: 0;
+    margin-bottom: 15.8vw;
+  }
+  .project-github {
+    width: 3.5vw;
+    position: absolute;
+    bottom: 0;
+    right: 1.2vw;
+  }
+
+  .someofmy-container {
+    margin-bottom: 3vw;
+  }
 
   .project-mobile {
     display: none;
@@ -225,4 +306,33 @@
     display: none;
   }
   
+}
+
+@media (min-width: 1000px) {
+  .featured-project {
+    font-size: 1rem;
+    margin-bottom: 0.7vw;
+  }
+  .project-title {
+    font-size: 2rem;
+  }
+  .project-description {
+    font-size: 1rem;
+  }
+  .project-github {
+    width: 30px;
+    padding: 0;
+  }
+  .project-overlay-desktop {
+    max-width: 70%; /* Limit the width to 70% of the parent container */
+    max-height: 10vh;
+  }
+  .someofmy-text {
+    font-size: 32px;
+  }
+  
+}
+
+@media (min-width: 1300px) {
+
 }
